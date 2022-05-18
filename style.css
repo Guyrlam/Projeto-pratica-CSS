@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Fontes*/
+/*Fonts*/
 @font-face {
     font-family: amiko;
     src: url(./assets/fontes/.woff/amiko-regular-webfont.woff);
@@ -28,190 +28,212 @@ body {
     background-image: url(./assets/imagens/background.jpg);
     background-size: cover;
     font-family: amiko, sans-serif;
-}
-
-/*Header*/
-header {
-    position:fixed;
-    text-transform: uppercase;
-    display: flex;
-    width: 100%;
-    z-index: 1;
-    font-weight: normal;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    padding: 4vh 0;
-}
-
-header p {
-    margin-right: 40px;
-}
-
-header i {
-    margin: 0 5px;
-}
-
-.lado-esquerdo {
     display: flex;
 }
 
-header ul {
-    display: flex;
-}
-
-header li {
-    list-style: none;
-    margin-left: 60px;
-}
-
-header p:hover, header i:hover, header li:hover {
-    transition: all 300ms ease;
-    cursor: pointer;
-    color: #215816;
-}
-
-/*main*/
-main {
-    display: flex;
-}
-
-.main-lado-esquerdo {
+/*left side*/
+#left-side {
     background-color: rgb(0,0,0,0.25);
     backdrop-filter: blur(80px);
     width: 40vw;
     height: 100vh;
 }
 
-.container {
+/*Left header*/
+#left-header {
+    text-transform: uppercase;
     display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 40vw;
+    height: 7vh;
+    font-weight: normal;
+    padding: 1.5vw 0 0 5vw;
+    font-size: 2.5vh;
+    align-items: center;
+}
 
-    padding: 15vh 0 0 0vh;
+#socials {
+    display: flex;
+}
 
+#socials p {
+    margin-right: 3vw;
+}
+
+#socials i {
+    margin: 0 0.4vw;
+}
+
+#socials p:hover, #socials i:hover {
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: #215816;
+}
+
+/*left main*/
+#main-left-side {
+    width: 40vw;
+    height: 93vh;
+}
+
+/*Transparent word*/
+#background-ice {
+    width: 40vw;
+    height: 60vh;
+    padding: 15vh 2vw 0 18vw;
     background-image: url(./assets/imagens/background.jpg);
-    background-size: cover;
-
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.transparente {
+#ice {
     font-size: 30vh;
     font-weight: bolder;
-    margin: 0vh 0 0 40vh;
 }
 
-.main-lado-direito {
+/*Information card*/
+#information-card {
+    margin: 5vh 6vw 0;
+    color: black;
+    width: 40vw;
+    height: 15vh;
+    font-family: 'Roboto Flex', sans-serif;
+    color: white;
+    width: 28vw;
+}
+
+#header-card {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5vh;
+    margin: 0 0 1.8vh 1.6vw ;
+    text-transform: uppercase;
+    letter-spacing: 0.13vw;
+}
+
+#card-number {
+    color: gray;
+}
+
+#card-symbol {
+    color: rgba(128, 128, 128, 0.209);
+    font-weight: bold;
+    font-size: small;
+    writing-mode: vertical-lr;
+    margin-right: 0.7vw;
+}
+
+#text-card  {
+    display: flex;
+}
+
+#balls {
+    display: flex;
+}
+
+.ball {
+    width: 0.7vw;
+    height: 1.5vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 0 0.15vw;
+}
+
+.ball:hover {
+    transition: all 300ms ease;
+    background-color: gray;
+    cursor: pointer;
+}
+
+#text-card p {
+    margin-left: 2vw;
+    font-size: 2vh;
+    color: gray;
+}
+
+/*invite text*/
+#invite-text {
+    text-transform: uppercase;
+    font-size: 2vh;
+    margin: 5vh 0 0 6.3vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#arrow {
+    margin-left: 1.2vw;  
+    width: 6vw;
+}
+
+#invite-text:hover {
+    transition: all 500ms ease;
+    cursor: pointer;
+    filter: drop-shadow( 0px 0px 10px rgba(255, 255, 255, 0.598)); 
+}
+
+/*right side*/
+#right-side {
     width: 60vw;
     height: 100vh;
-    display: flex;
-    gap: 72vh;
-    overflow: hidden;
 }
 
-.main-lado-direito h1 {
+/*right header*/
+#right-header {
+    text-transform: uppercase;
+    display: flex;
+    width: 60vw;
+    height: 7vh;
+    font-weight: normal;
+    padding: 1.5vw 5vw 0 0;
+    font-size: 2.5vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+    margin-left: 4vw;
+}
+
+#navbar li:hover {
+    transition: all 300ms ease;
+    cursor: pointer;
+    color: #215816;
+}
+
+/*right main*/
+#main-right-side {
+    width: 60vw;
+    height: 93vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-right-side h1 {
     font-size: 30vh;
     padding: 35vh 0 0 0;
     color: aliceblue;
     font-weight: bolder;
 }
 
-.main-lado-direito h2 {
-    font-size: 8vh;
-    color: white;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    color: darkgrey;
+#lateral-text {
     display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+#lateral-text h2{
+    writing-mode: vertical-lr;
+    font-size: 8vh;
+    text-transform: uppercase;
+    color: darkgrey;
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 300;
     letter-spacing: 2vh;
-    position: relative;
-    z-index: 0;
-}
-
-/*main-card*/
-
-.card {
-    margin-top: 15vh;
-    color: black;
-    width: 40vw;
-    height: 15vh;
-    margin-left: 6vw;
-    font-family: 'Roboto Flex', sans-serif;
-    color: white;
-}
-
-.text-card  {
-    display: flex;
-}
-
-.ball {
-    width: 10px;
-    height: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid gray;
-    border-radius: 20px;
-    margin: 0 2.5px;
-}
-
-#first {
-    margin: 0 10px 0 0;
-    background-color: gray;
-}
-
-.card p {
-    margin-left: 30px;
-    font-size: small;
-    width: 287px;
-    color: gray;
-}
-
-.header-card {
-    font-weight: bold;
-    font-size: xx-large;
-    margin-left: 28.7px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-}
-
-.card-num {
-    color: gray;
-}
-
-.card-simb {
-    color: rgba(128, 128, 128, 0.661);
-    font-weight: bold;
-    font-size: small;
-    writing-mode: vertical-lr;
-}
-
-.seta-card {
-    text-transform: uppercase;
-    font-size: small;
-    margin-top: 35px;
-    font-weight: bold;
-    margin-left: 100px;
-    display: flex;
-    align-items: center;
-}
-
-.seta {
-    margin-left: 20px;  
-    width: 120px;
-}
-
-.seta-card:hover {
-    transition: all 500ms ease;
-    cursor: pointer;
-    filter: drop-shadow( 0px 0px 10px rgba(255, 255, 255, 0.598)); 
 }
