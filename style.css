@@ -86,7 +86,7 @@ body {
 }
 
 #ice {
-    font-size: 30vh;
+    font-size: 14.5vw;
     font-weight: bolder;
 }
 
@@ -212,24 +212,29 @@ body {
     width: 60vw;
     height: 93vh;
     display: flex;
-    justify-content: space-between;
 }
 
 #main-right-side h1 {
-    font-size: 30vh;
+    font-size: 14.5vw;
     padding: 35vh 0 0 0;
     color: aliceblue;
     font-weight: bolder;
 }
 
 #lateral-text {
-    display: flex;
     text-align: center;
     margin-right: 1vw;
+    position: relative;
+    width: 100%;
+    padding-right: 20vh;
 }
 
 #lateral-text h2{
-    writing-mode: vertical-lr;
+    position: absolute;
+    top: 5vh;
+    right: 4vh;
+    transform-origin: right;
+    transform: rotate(-90deg);
     font-size: 8vh;
     text-transform: uppercase;
     color: darkgrey;
