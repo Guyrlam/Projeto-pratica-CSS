@@ -7,25 +7,25 @@
 /*Fonts*/
 @font-face {
     font-family: amiko;
-    src: url(./assets/fontes/.woff/amiko-regular-webfont.woff);
+    src: url(../assets/fontes/.woff/amiko-regular-webfont.woff);
     font-weight: normal;
 }
 
 @font-face {
     font-family: amiko;
-    src: url(./assets/fontes/.woff/amiko-semibold-webfont.woff);
+    src: url(../assets/fontes/.woff/amiko-semibold-webfont.woff);
     font-weight: bold;
 }
 
 @font-face {
     font-family: amiko;
-    src: url(./assets/fontes/.woff/amiko-bold-webfont.woff);
+    src: url(../assets/fontes/.woff/amiko-bold-webfont.woff);
     font-weight: bolder;
 }
 
 /*Body*/
 body {
-    background-image: url(./assets/imagens/background.jpg);
+    background-image: url(../assets/imagens/background.jpg);
     background-size: cover;
     font-family: amiko, sans-serif;
     display: flex;
@@ -47,7 +47,7 @@ body {
     height: 7vh;
     font-weight: normal;
     padding: 1.5vw 0 0 5vw;
-    font-size: 2.5vh;
+    font-size: 1.2vw;
     align-items: center;
 }
 
@@ -80,7 +80,7 @@ body {
     width: 40vw;
     height: 60vh;
     padding: 15vh 2vw 0 18vw;
-    background-image: url(./assets/imagens/background.jpg);
+    background-image: url(../assets/imagens/background.jpg);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -105,7 +105,7 @@ body {
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 2.4vw;
     margin: 0 0 1.8vh 1.6vw ;
     text-transform: uppercase;
     letter-spacing: 0.13vw;
@@ -133,7 +133,7 @@ body {
 
 .ball {
     width: 0.7vw;
-    height: 1.5vh;
+    height: 0.7vw;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid gray;
     border-radius: 20px;
@@ -148,14 +148,14 @@ body {
 
 #text-card p {
     margin-left: 2vw;
-    font-size: 2vh;
+    font-size: 0.9vw;
     color: gray;
 }
 
 /*invite text*/
 #invite-text {
     text-transform: uppercase;
-    font-size: 2vh;
+    font-size: 0.9vw;
     margin: 5vh 0 0 6.3vw;
     font-weight: bold;
     display: flex;
@@ -184,9 +184,9 @@ body {
     text-transform: uppercase;
     display: flex;
     width: 60vw;
-    height: 7vh;
+    height: 1.2vw;
     font-weight: normal;
-    padding: 1.5vw 5vw 0 0;
+    padding: 2.5vw 5vw 0 0;
     font-size: 2.5vh;
     justify-content: flex-end;
     align-items: center;
@@ -231,7 +231,7 @@ body {
 
 #lateral-text h2{
     position: absolute;
-    top: 5vh;
+    top: 7vh;
     right: 4vh;
     transform-origin: right;
     transform: rotate(-90deg);
